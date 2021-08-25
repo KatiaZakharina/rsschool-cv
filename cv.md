@@ -49,3 +49,24 @@ function rgb(r, g, b){
     return (newarr.reduce((sum, current) => `${sum}${current}`)).toUpperCase();
 }
 ```
+
+---
+
+## Education
+
+- **Belarusian State University**</br>
+  _Specialty: Mathematics and Information Technologies_  
+  _Direction: Web-Programming and Internet Technologies_
+
+- **Courses:**
+  - Udemy [JavaScript courses](https://www.udemy.com/course/javascript_full/)
+  - Glo Academy video courses
+  - JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru/)
+  - RS School Course "JavaScript/Front-end" (in progress)
+
+---
+
+## Languages
+
+- Russian - Native
+- English - A2+
