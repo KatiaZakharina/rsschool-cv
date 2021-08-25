@@ -2,30 +2,24 @@
 
 ## Contacts
 
----
-
-**Location:** Minsk, Belarus </br>
-**Phone:** +375 (29) 165 87 83 </br>
-**E-mail:** katia.zakharina@gmail.com </br>
-**GitHub:** [KatiaZakharina](https://github.com/KatiaZakharina) </br>
-**️Telegram:** [@katia_zakharina](https://t.me/katia_zakharina) </br>
+**Location:** Minsk, Belarus  
+**Phone:** +375 (29) 165 87 83  
+**E-mail:** katia.zakharina@gmail.com  
+**GitHub:** [KatiaZakharina](https://github.com/KatiaZakharina)  
+**️Telegram:** [@katia_zakharina](https://t.me/katia_zakharina)
 
 ---
 
 ## Summary
 
----
-
-I am a second-year student of BSU and my specialty is related to web development.</br>
-I really like what I do, I enjoy creating websites and would like to do it better. I like to develop in this direction. That is why I am currently attending RS school courses and I hope that it will help me improve my skills.</br>
-I believe that my patience, rationality and diligence will help me in this. I'm focused, attentive to details, and like finding creative solutions. I also participated in group projects at the university, so I consider myself a good team worker. </br>
+I am a second-year student of BSU and my specialty is related to web development.  
+I really like what I do, I enjoy creating websites and would like to do it better. I like to develop in this direction. That is why I am currently attending RS school courses and I hope that it will help me improve my skills.  
+I believe that my patience, rationality and diligence will help me in this. I'm focused, attentive to details, and like finding creative solutions. I also participated in group projects at the university, so I consider myself a good team worker.  
 My goal is to gain experience working on real projects to become an skilled web developer.
 
 ---
 
 ## Skills
-
----
 
 - HTML & CSS
 - JavaScript
@@ -39,9 +33,8 @@ My goal is to gain experience working on real projects to become an skilled web 
 
 ## Code Examples
 
----
-
-> **RGB To Hex Conversion** </br> > _Passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value._
+> **RGB To Hex Conversion**  
+> _Passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value._
 
 ```JavaScript
 function rgb(r, g, b){
