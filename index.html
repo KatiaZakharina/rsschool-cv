@@ -1,13 +1,88 @@
+<!-- @prettier -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/sun.png" type="image/x-icon" />
     <title>Katia Zakharina CV &#127774;</title>
   </head>
-  <body></body>
+  <body>
+    <div class="cv-page">
+      <aside class="sidebar">
+        <img class="personal-photo" src="img/me.jpg" alt="Katia Zakharina photo" />
+        <section class="sidebar__contact-info">
+          <h3 class="section-title sidebar__section-title">Info</h3>
+          <hr />
+          <ul>
+            <li class="sidebar__contact-item">
+              <h4 class="section-subtitle">Location</h4>
+              <p>Minsk, Belarus</p>
+            </li>
+
+            <li class="sidebar__contact-item">
+              <h4 class="section-subtitle">Phone</h4>
+              <a class="hover-effect" href="tel:+375291658783">+375(29)165-87-83</a>
+            </li>
+
+            <li class="sidebar__contact-item">
+              <h4 class="section-subtitle">Email</h4>
+              <a class="hover-effect" href="mailto:katia.zakharina@gmail.com">
+                katia.zakharina@gmail.com
+              </a>
+            </li>
+
+            <li class="sidebar__contact-item">
+              <h4 class="section-subtitle">GitHub</h4>
+              <a href="https://github.com/KatiaZakharina" class="hover-effect">KatiaZakharina</a>
+            </li>
+
+            <li class="sidebar__contact-item">
+              <h4 class="section-subtitle">Telegram</h4>
+              <a class="hover-effect" href="https://t.me/katia_zakharina">@katia_zakharina</a>
+            </li>
+          </ul>
+        </section>
+        <!-- /.sidebar__contact-info -->
+
+        <section class="sidebar__skills">
+          <h3 class="section-title sidebar__section-title">Skills</h3>
+          <hr />
+          <ul>
+            <li class="sidebar__skill-item">HTML & CSS</li>
+            <li class="sidebar__skill-item">JavaScript</li>
+            <li class="sidebar__skill-item">C++ basic</li>
+            <li class="sidebar__skill-item">Git & GitHub</li>
+            <li class="sidebar__skill-item">BEM</li>
+            <li class="sidebar__skill-item">Figma</li>
+            <li class="sidebar__skill-item">Trello, Slack</li>
+          </ul>
+        </section>
+        <!-- /.sidebar__skills -->
+
+        <section class="sidebar__english">
+          <h3 class="section-title sidebar__section-title">English</h3>
+          <hr />
+          <span class="english-level">A2+</span>
+        </section>
+        <!-- /.sidebar__english -->
+      </aside>
+      <!-- /.sidebar -->
+
+      <main class="main"><header></header></main>
+      <!-- /.__main -->
+
+      <footer></footer>
+    </div>
+    <!-- /.cv-page -->
+  </body>
 </html>
