@@ -151,24 +151,32 @@
             range must be rounded to the closest valid value.
           </blockquote>
           <pre class="code">
-          <code>
+<code>
       function rgb(r, g, b) {
         let arr = [r, g, b];
         let newarr = arr.map(i => {
           return i >= 255 ? 'FF' :
-                  i <= 0 ? '00' :
-                  i <= 16 ? '0' + i.toString(16) : i.toString(16);
+                  i &lt= 0 ? '00' :
+                  i &lt= 16 ? '0' + i.toString(16) : i.toString(16);
         });
 
         return newarr.reduce((sum, current) => `${sum}${current}`).toUpperCase();
       }                
-          </code>
+</code>
         </pre>
         </section>
       </main>
       <!-- /.__main -->
 
-      <footer class="footer"></footer>
+      <footer class="cv-page__footer footer">
+        <a href="https://github.com/KatiaZakharina">
+          <img class="footer__logo" src="img/github-icon.svg" alt="github icon" />
+        </a>
+        <span>&copy; 2021</span>
+        <a href="https://rs.school/js/">
+          <img class="footer__logo" src="img/rs_school_js.svg" alt="rs school js icon" />
+        </a>
+      </footer>
     </div>
     <!-- /.cv-page -->
   </body>
