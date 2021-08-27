@@ -18,9 +18,9 @@
   </head>
   <body>
     <div class="cv-page">
-      <aside class="sidebar">
+      <aside class="cv-page__sidebar sidebar">
         <img class="personal-photo" src="img/me.jpg" alt="Katia Zakharina photo" />
-        <section class="sidebar__contact-info">
+        <section class="sidebar__section">
           <h3 class="section-title sidebar__section-title">Info</h3>
           <hr />
           <ul>
@@ -54,7 +54,7 @@
         </section>
         <!-- /.sidebar__contact-info -->
 
-        <section class="sidebar__skills">
+        <section class="sidebar__section">
           <h3 class="section-title sidebar__section-title">Skills</h3>
           <hr />
           <ul>
@@ -69,7 +69,7 @@
         </section>
         <!-- /.sidebar__skills -->
 
-        <section class="sidebar__english">
+        <section class="sidebar__section">
           <h3 class="section-title sidebar__section-title">English</h3>
           <hr />
           <span class="english-level">A2+</span>
@@ -78,10 +78,97 @@
       </aside>
       <!-- /.sidebar -->
 
-      <main class="main"><header></header></main>
+      <main class="cv-page__main main">
+        <header class="main__header">
+          <h1 class="main__full-name">Katia Zakharina</h1>
+          <h2 class="main__job">Front-End Developer</h2>
+        </header>
+
+        <section class="main__section">
+          <img class="main__section-icon" src="img/aboutme-icon.svg" alt="person icon" />
+          <h4 class="main__section-subtitle section-subtitle">About me</h4>
+          <hr />
+          <p>I am a second-year student of BSU and my specialty is related to web development.</p>
+          <p>
+            I really like what I do, I enjoy creating websites and would like to do it better. I
+            like to develop in this direction. That is why I am currently attending RS school
+            courses and I hope that it will help me improve my skills.
+          </p>
+          <p>
+            I believe that my patience, rationality and diligence will help me in this. I'm focused,
+            attentive to details, and like finding creative solutions. I also participated in group
+            projects at the university, so I consider myself a good team worker.
+          </p>
+          <p>
+            My goal is to gain experience working on real projects to become an skilled web
+            developer.
+          </p>
+        </section>
+
+        <section class="main__section">
+          <img class="main__section-icon" src="img/education-icon.svg" alt="education icon" />
+          <h4 class="main__section-subtitle section-subtitle">Education</h4>
+          <hr />
+          <ul class="main__education-list">
+            <li>
+              Belarusian State University
+              <ul class="main__education-sublist italic">
+                <li>Specialty: Mathematics and Information Technologies</li>
+                <li>Direction: Web-Programming and Internet Technologies</li>
+              </ul>
+            </li>
+            <li>
+              Courses:
+              <ul class="main__education-sublist">
+                <li>
+                  <a class="hover-effect" href="https://www.udemy.com/course/javascript_full/">
+                    Udemy JavaScript
+                  </a>
+                </li>
+                <li>
+                  <a class="hover-effect" href="https://learn.javascript.ru/">
+                    JavaScript manual on learn.javascript.ru
+                  </a>
+                </li>
+                <li>
+                  <a class="hover-effect" href="https://rs.school/js/">
+                    RS School Course "JavaScript/Front-end" (in progress)
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main__section">
+          <img class="main__section-icon" src="img/code-icon.svg" alt="code icon" />
+          <h4 class="main__section-subtitle section-subtitle">Code Examples</h4>
+          <hr />
+          <blockquote class="blockquote italic">
+            <p class="blockuote-title">RGB To Hex Conversion</p>
+            Passing in RGB decimal values will result in a hexadecimal representation being
+            returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that
+            range must be rounded to the closest valid value.
+          </blockquote>
+          <pre class="code">
+          <code>
+      function rgb(r, g, b) {
+        let arr = [r, g, b];
+        let newarr = arr.map(i => {
+          return i >= 255 ? 'FF' :
+                  i <= 0 ? '00' :
+                  i <= 16 ? '0' + i.toString(16) : i.toString(16);
+        });
+
+        return newarr.reduce((sum, current) => `${sum}${current}`).toUpperCase();
+      }                
+          </code>
+        </pre>
+        </section>
+      </main>
       <!-- /.__main -->
 
-      <footer></footer>
+      <footer class="footer"></footer>
     </div>
     <!-- /.cv-page -->
   </body>
