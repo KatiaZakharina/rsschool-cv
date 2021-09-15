@@ -1,6 +1,3 @@
-/**
- * @prettier
- */
 :root {
   --yellow-color: #fccb4a;
   --dark-color: #333;
@@ -55,9 +52,6 @@ hr {
   line-height: 1.5em;
   list-style-type: none;
 }
-.english-level {
-  font-size: var(--font1);
-}
 .italic {
   font-style: italic;
 }
@@ -70,12 +64,12 @@ hr {
   text-decoration: none;
   transition: background-size 0.2s;
 }
-
 .hover-effect:hover {
   color: #000;
   background-size: 4px 50px;
 }
 .header__full-name {
+  margin: 28px 0;
   font-size: var(--font1);
   font-weight: bold;
   line-height: 0.1em;
@@ -83,6 +77,9 @@ hr {
 .header__job {
   font-size: var(--font2);
   font-weight: normal;
+}
+.english-level {
+  font-size: var(--font1);
 }
 .blockquote {
   font-size: var(--font4);
@@ -93,6 +90,7 @@ hr {
   font-weight: bold;
   font-style: normal;
 }
+
 /* ---------------
       Structure
   --------------- */
@@ -126,6 +124,7 @@ hr {
 /* ---------------
      Navigation
   --------------- */
+
 .nav__link {
   display: inline;
   padding: 0 10px;
@@ -145,7 +144,6 @@ hr {
   margin: 60px auto;
   border-radius: 999px;
 }
-
 .sidebar__section {
   margin-top: 40px;
 }
@@ -252,16 +250,16 @@ hr {
   width: 80%;
   height: auto;
 }
-.card .image {
+.card__inner {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.card .image img {
+.card__image{
   width: 100%;
   transition: 0.5s;
 }
-.card:hover .image img {
+.card:hover .card__inner img {
   opacity: 0.5;
   transform: translateX(100%);
 }
@@ -310,6 +308,11 @@ hr {
 .footer__logo {
   height: 40px;
 }
+
+/* ---------------
+      Media
+  --------------- */
+
 @media (max-width: 1200px) {
   :root {
     --font1: 43px;
@@ -326,9 +329,6 @@ hr {
   :root {
     --font1: 47px;
     --font2: 30px;
-    --font3: 19px;
-    --font4: 17px;
-    --font5: 14px;
   }
 }
 @media (max-width: 768px) {
