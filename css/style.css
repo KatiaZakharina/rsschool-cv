@@ -2,17 +2,27 @@
   --yellow-color: #fccb4a;
   --dark-color: #333;
   --light-gray-color: #fafafa;
+  --font1: 50px;
+  --font2: 37px;
+  --font3: 25px;
+  --font4: 19px;
+  --font5: 16px;
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+ul,
+ol {
+  padding-left: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 19px;
+  font-size: var(--font4);
   font-weight: 400;
   color: var(--dark-color);
   background-color: var(--yellow-color);
@@ -31,19 +41,16 @@ hr {
 
 .section-title {
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
+  font-size: var(--font3);
   font-weight: 500;
   line-height: 1.5em;
   text-transform: uppercase;
 }
 .section-subtitle {
-  font-size: 19px;
+  font-size: var(--font4);
   font-weight: bold;
   line-height: 1.5em;
   list-style-type: none;
-}
-.english-level {
-  font-size: 48px;
 }
 .italic {
   font-style: italic;
@@ -57,18 +64,31 @@ hr {
   text-decoration: none;
   transition: background-size 0.2s;
 }
-
 .hover-effect:hover {
+  color: #000;
   background-size: 4px 50px;
 }
-.main__full-name {
-  font-size: 50px;
+.header__full-name {
+  margin: 28px 0;
+  font-size: var(--font1);
   font-weight: bold;
   line-height: 0.1em;
 }
-.main__job {
-  font-size: 37px;
+.header__job {
+  font-size: var(--font2);
   font-weight: normal;
+}
+.english-level {
+  font-size: var(--font1);
+}
+.blockquote {
+  font-size: var(--font4);
+  padding: 10px 20px;
+}
+.blockquote-title {
+  font-size: var(--font5);
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* ---------------
@@ -76,24 +96,41 @@ hr {
   --------------- */
 
 .cv-page {
-  display: flex;
-  flex-wrap: wrap;
   max-width: 1250px;
   margin: 40px auto;
+  padding: 0 35px;
+}
+.cv-page__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cv-page__sidebar {
-  width: 30%;
   min-width: 300px;
   background-color: var(--light-gray-color);
 }
 
 .cv-page__main {
   padding: 80px 50px 0;
-  width: 70%;
   background-color: #fff;
 }
+.header {
+  margin: 0 auto;
+}
 .cv-page__footer {
+  width: 100%;
+}
+
+/* ---------------
+     Navigation
+  --------------- */
+
+.nav__link {
+  display: inline;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+.navbar-nav {
   width: 100%;
 }
 
@@ -107,7 +144,6 @@ hr {
   margin: 60px auto;
   border-radius: 999px;
 }
-
 .sidebar__section {
   margin-top: 40px;
 }
@@ -153,24 +189,113 @@ hr {
   margin-bottom: 20px;
   padding-left: 30px;
   background-color: var(--light-gray-color);
+}
+.border-left_yellow {
   border-left: var(--yellow-color) solid 10px;
 }
 .code {
   margin-bottom: 80px;
   font-family: monospace;
-  font-size: 15px;
+  font-size: var(--font5);
   line-height: 1.3em;
   font-style: normal;
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
   box-shadow: 0px 20px 48px rgba(0, 0, 0, 0.15);
 }
-.blockuote-title {
-  font-size: 16px;
+.portfolio__item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 40px;
+  background-color: var(--light-gray-color);
+  transition: box-shadow 0.5s ease;
+}
+.portfolio__item:hover {
+  box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.link-wrapper {
+  line-height: 0.8em;
+}
+.link-wrapper::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.portfolio__description {
+  padding-right: 50px;
+}
+.portfolio__title {
+  margin: 25px 0;
+  font-size: var(--font4);
   font-weight: bold;
-  font-style: normal;
+  line-height: 1.5em;
+  list-style-type: none;
+}
+.portfolio__img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
 }
 /* ---------------
-      Main
+      Card
+  --------------- */
+
+.card {
+  margin: 20px auto;
+  width: 80%;
+  height: auto;
+}
+.card__inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card__image{
+  width: 100%;
+  transition: 0.5s;
+}
+.card:hover .card__inner img {
+  opacity: 0.5;
+  transform: translateX(100%);
+}
+.card__details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--yellow-color);
+  transition: 0.5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .card__details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+.card__center {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card__title {
+  margin: 20px 0;
+  font-size: var(--font3);
+  font-weight: bold;
+  line-height: 1.5em;
+  list-style-type: none;
+}
+
+/* ---------------
+      Footer
   --------------- */
 
 .footer {
@@ -182,4 +307,95 @@ hr {
 }
 .footer__logo {
   height: 40px;
+}
+
+/* ---------------
+      Media
+  --------------- */
+
+@media (max-width: 1200px) {
+  :root {
+    --font1: 43px;
+    --font2: 27px;
+    --font3: 19px;
+    --font4: 17px;
+    --font5: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .cv-page__main {
+    padding: 10px 50px 0;
+  }
+  :root {
+    --font1: 47px;
+    --font2: 30px;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --font1: 40px;
+    --font2: 25px;
+    --font3: 15px;
+    --font4: 15px;
+    --font5: 11px;
+  }
+}
+@media (max-width: 650px) {
+  :root {
+    --font1: 35px;
+    --font2: 20px;
+    --font3: 14px;
+    --font4: 12px;
+    --font5: 9px;
+  }
+  .portfolio__img {
+    height: 240px;
+    width: 240px;
+  }
+  .portfolio__description {
+    padding-right: 18px;
+  }
+}
+@media (max-width: 560px) {
+  :root {
+    --font1: 35px;
+    --font2: 23px;
+    --font3: 14px;
+    --font4: 13px;
+    --font5: 8px;
+  }
+  .personal-photo {
+    margin-bottom: 30px;
+    height: 150px;
+  }
+  .portfolio__description {
+    padding-right: 15px;
+  }
+  .card__title {
+    margin: 10px 0;
+    font-size: var(--font4);
+    font-weight: bold;
+    line-height: 1.5em;
+    list-style-type: none;
+  }
+  .card__text {
+    font-size: var(--font5);
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --font1: 25px;
+    --font2: 18px;
+    --font3: 14px;
+    --font4: 10px;
+    --font5: 8px;
+  }
+  .card__center {
+    padding: 10px;
+  }
+  .cv-page {
+    margin: 0;
+    padding: 0 15px;
+  }
 }
