@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,20 +28,48 @@
     <title>Katia Zakharina CV &#127774;</title>
   </head>
   <body>
-    <div class="cv-page">
-      <nav class="nav">
-        <ul class="nav__inner">
-          <li class="nav__link"><a href="#info" class="hover-effect">Contacts</a></li>
-          <li class="nav__link"><a href="#skills" class="hover-effect">Skills</a></li>
-          <li class="nav__link"><a href="#about" class="hover-effect">Summary</a></li>
-          <li class="nav__link"><a href="#education" class="hover-effect">Education</a></li>
-          <li class="nav__link"><a href="#code" class="hover-effect">Code example</a></li>
-          <li class="nav__link"><a href="#portfolio" class="hover-effect">Portfolio</a></li>
-        </ul>
+    <div class="cv-page container">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-end row">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav   d-flex justify-content-lg-between">
+            <li class="nav-item nav__link section-subtitle">
+              <a class="nav-link" href="#info">Contacts</a>
+            </li>
+            <li class="nav-item nav__link section-subtitle">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item nav__link section-subtitle">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item nav__link section-subtitle">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item nav__link section-subtitle">
+              <a class="nav-link" href="#code">Code example</a>
+            </li>
+            <li class="nav-item nav__link section-subtitle">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="cv-page__wrapper">
-        <aside class="cv-page__sidebar sidebar">
-          <img class="personal-photo" src="img/me.jpg" alt="Katia Zakharina photo" />
+
+      <div class="cv-page__wrapper row">
+        <aside class="cv-page__sidebar sidebar col-lg-4">
+
+          <div class="sidebar__header d-flex align-items-center justify-content-around d-lg-block flex-column flex-sm-row">
+            <img class="personal-photo" src="img/me.jpg" alt="Katia Zakharina photo" />
+
+            <header class="header d-lg-none pr-20">
+              <h1 class="header__full-name">Katia Zakharina</h1>
+              <h2 class="header__job">Front-End Developer</h2>
+            </header>
+          </div>
+
           <section id="info" class="sidebar__section">
             <h3 class="section-title sidebar__section-title">Info</h3>
             <hr />
@@ -95,10 +125,10 @@
         </aside>
         <!-- /.sidebar -->
   
-        <main class="cv-page__main main">
-          <header class="main__header">
-            <h1 class="main__full-name">Katia Zakharina</h1>
-            <h2 class="main__job">Front-End Developer</h2>
+        <main class="cv-page__main main col-lg-8">
+          <header class="header d-none d-lg-block">
+            <h1 class="header__full-name">Katia Zakharina</h1>
+            <h2 class="header__job">Front-End Developer</h2>
           </header>
   
           <section id="about" class="main__section">
@@ -161,7 +191,7 @@
             <img class="main__section-icon" src="img/code-icon.svg" alt="code icon" />
             <h4 class="main__section-subtitle section-subtitle">Code Examples</h4>
             <hr />
-            <blockquote class="blockquote italic border-left">
+            <blockquote class="blockquote italic border-left_yellow">
               <h5 class="blockquote-title">RGB To Hex Conversion</h5>
               Passing in RGB decimal values will result in a hexadecimal representation being
               returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that
@@ -183,18 +213,44 @@
           </pre>
           </section>
           <section id="portfolio" class="main__section">
-            <img class="main__section-icon" src="img/portfolio-icon.svg" alt="code icon" />
+            <img class="main__section-icon" src="img/portfolio-icon.svg" alt="portfolio icon" />
             <h4 class="main__section-subtitle section-subtitle">My recent projects</h4>
             <hr />
             <div class="portfolio">
-              <div class="portfolio__item border-left">
+
+              <div class="card d-sm-none">
+                <div class="image">
+                  <img src="img/happy-journey.jpg"/>
+                </div>
+                <div class="card__details">
+                  <div class="card__center">
+                    <h5 class="card__title">Happy Journey - HTML, CSS, JS</h5>
+                    <p class="card__text">Landing page for travel agency. Made with BEM and Bootstrap. Responsive and cross-browser. Website for my coursework.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio__item border-left_yellow d-none d-sm-flex">
                 <div class="portfolio__description">
                   <h5 class="portfolio__title">Happy Journey - HTML, CSS, JS</h5>
                   <p class="portfolio__text">Landing page for travel agency. Made with BEM and Bootstrap. Responsive and cross-browser. Website for my coursework.</p>
                 </div>
                 <a href="https://katiazakharina.github.io/HappyJourney/" class="link-wrapper" target="_blank"><img src="img/happy-journey.jpg" alt="" class="portfolio__img"></a>
               </div>
-              <div class="portfolio__item border-left">
+
+              <div class="card d-sm-none">
+                <div class="image">
+                  <img src="img/mortal-combat.jpg"/>
+                </div>
+                <div class="card__details">
+                  <div class="card__center">
+                    <h5 class="card__title">Mortal Combat - HTML, CSS</h5>
+                    <p class="card__text">Landing page for the cinema. Made using the Video and Fancybox libraries. Responsive. Homework at the Glo Academy.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio__item border-left_yellow  d-none d-sm-flex">
                 <div class="portfolio__description">
                   <h5 class="portfolio__title">Mortal Combat - HTML, CSS</h5>
                   <p class="portfolio__text">Landing page for the cinema. Made using the Video and Fancybox libraries. Responsive. Homework at the Glo Academy.</p>
