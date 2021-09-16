@@ -285,6 +285,9 @@ hr {
   top: 50%;
   transform: translateY(-50%);
 }
+.card__center:hover{
+  text-decoration: none;
+}
 
 .card__title {
   display: inline;
