@@ -86,7 +86,7 @@ hr {
   padding: 10px 20px;
 }
 .blockquote-title {
-  font-size: var(--font5);
+  font-size: var(--font4);
   font-weight: bold;
   font-style: normal;
 }
@@ -163,7 +163,7 @@ hr {
 }
 
 /* ---------------
-      Main
+       Main
   --------------- */
 
 .main__section-subtitle {
@@ -196,7 +196,7 @@ hr {
 .code {
   margin-bottom: 80px;
   font-family: monospace;
-  font-size: var(--font5);
+  font-size: var(--font4);
   line-height: 1.3em;
   font-style: normal;
   background-color: #f0f0f0;
@@ -287,11 +287,16 @@ hr {
 }
 
 .card__title {
-  margin: 20px 0;
+  display: inline;
+  padding: 3px;
   font-size: var(--font3);
   font-weight: bold;
-  line-height: 1.5em;
+  line-height: 2em;
   list-style-type: none;
+}
+.card__text{
+  color: #000;
+  text-decoration: none;
 }
 
 /* ---------------
@@ -322,7 +327,7 @@ hr {
     --font5: 14px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .cv-page__main {
     padding: 10px 50px 0;
   }
@@ -335,38 +340,45 @@ hr {
   :root {
     --font1: 40px;
     --font2: 25px;
-    --font3: 15px;
-    --font4: 15px;
-    --font5: 11px;
+    --font3: 19px;
+    --font4: 17px;
+    --font5: 13px;
+  }
+  .portfolio__text{
+    font-size: var(--font5);
   }
 }
 @media (max-width: 650px) {
   :root {
     --font1: 35px;
-    --font2: 20px;
-    --font3: 14px;
-    --font4: 12px;
-    --font5: 9px;
+    --font2: 22px;
+    --font4: 17px;
+    --font5: 13px;
   }
   .portfolio__img {
-    height: 240px;
-    width: 240px;
+    height: 220px;
+    width: 220px;
   }
   .portfolio__description {
-    padding-right: 18px;
+    padding-right: 20px;
+    line-height: 1.1em;
+  }
+  .portfolio__title {
+    margin: 10px 0;
+    line-height: 1.5em;
   }
 }
 @media (max-width: 560px) {
   :root {
     --font1: 35px;
-    --font2: 23px;
-    --font3: 14px;
-    --font4: 13px;
-    --font5: 8px;
+    --font2: 22px;
+    --font3: 17px;
+    --font4: 14px;
+    --font5: 11px;
   }
   .personal-photo {
     margin-bottom: 30px;
-    height: 150px;
+    height: 180px;
   }
   .portfolio__description {
     padding-right: 15px;
@@ -374,22 +386,22 @@ hr {
   .card__title {
     margin: 10px 0;
     font-size: var(--font4);
-    font-weight: bold;
-    line-height: 1.5em;
-    list-style-type: none;
   }
   .card__text {
     font-size: var(--font5);
+  }
+  .footer__logo{
+    height: 30px;
   }
 }
 
 @media (max-width: 400px) {
   :root {
-    --font1: 25px;
-    --font2: 18px;
-    --font3: 14px;
-    --font4: 10px;
-    --font5: 8px;
+    --font1: 28px;
+    --font2: 20px;
+    --font3: 15px;
+    --font4: 12px;
+    --font5: 9px;
   }
   .card__center {
     padding: 10px;
