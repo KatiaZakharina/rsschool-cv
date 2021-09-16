@@ -215,16 +215,16 @@
             </blockquote>
             <pre class="code js">
   <code>
-        function rgb(r, g, b) {
-          let arr = [r, g, b];
-          let newarr = arr.map(i =&gt; {
-            return i &gt;= 255 ? 'FF' :
-                    i &lt;= 0 ? '00' :
-                    i &lt;= 16 ? '0' + i.toString(16) : i.toString(16);
-          });
-  
-          return newarr.reduce((sum, current) => `${sum}${current}`).toUpperCase();
-        }                
+  function rgb(r, g, b) {
+    let arr = [r, g, b];
+    let newarr = arr.map(i =&gt; {
+      return i &gt;= 255 ? 'FF' :
+              i &lt;= 0 ? '00' :
+              i &lt;= 16 ? '0' + i.toString(16) : i.toString(16);
+    });
+
+    return newarr.reduce((sum, current) => `${sum}${current}`).toUpperCase();
+  }                
   </code>
           </pre>
           </section>
@@ -238,13 +238,16 @@
                   <img class="card__image" src="img/happy-journey.jpg" alt="Happy Journey" />
                 </div>
                 <div class="card__details">
-                  <div class="card__center">
-                    <h5 class="card__title">Happy Journey - HTML, CSS, JS</h5>
+                  <a class="card__center"  
+                    href="https://katiazakharina.github.io/HappyJourney/"
+                    class="link-wrapper"
+                    target="_blank">
+                    <h5 class="card__title hover-effect">Happy Journey - HTML, CSS, JS</h5>
                     <p class="card__text">
                       Landing page for travel agency. Made with BEM and Bootstrap. Responsive and
                       cross-browser. Website for my coursework.
                     </p>
-                  </div>
+                  </a>
                 </div>
               </div>
 
@@ -269,13 +272,16 @@
                   <img class="card__image" src="img/mortal-combat.jpg" alt="Mortal Combat" />
                 </div>
                 <div class="card__details">
-                  <div class="card__center">
-                    <h5 class="card__title">Mortal Combat - HTML, CSS</h5>
+                  <a class="card__center"  
+                     href="https://katiazakharina.github.io/MortalCombatLanding/"
+                     class="link-wrapper"
+                     target="_blank">
+                    <h5 class="card__title hover-effect">Mortal Combat - HTML, CSS</h5>
                     <p class="card__text">
                       Landing page for the cinema. Made using the Video and Fancybox libraries.
                       Responsive. Homework at the Glo Academy.
                     </p>
-                  </div>
+                  </a>
                 </div>
               </div>
 
