@@ -2,6 +2,14 @@ const portfolioRoot = window.document.querySelector('#portfolio');
 
 const projects = [
   {
+    alt: 'Art Quiz',
+    img: 'img/art-quiz.jpg',
+    deployLink: 'https://art-quiz-coursework.herokuapp.com/',
+    title: 'Art Quiz - React, Redux, Typescript, react-router, i18next',
+    description:
+      'The game is an art test with two types of questions. Supports two languages and a dark theme',
+  },
+  {
     alt: 'Christmas task',
     img: 'img/christmas-task.jpg',
     deployLink: 'https://rolling-scopes-school.github.io/katiazakharina-JSFE2021Q3/christmas-task/',
