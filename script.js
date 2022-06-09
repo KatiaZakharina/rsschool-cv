@@ -1,4 +1,4 @@
-const portfolioRoot = window.document.querySelector('#portfolio');
+const portfolioRoot = window.document.querySelector('#portfolio-list');
 
 const projects = [
   {
