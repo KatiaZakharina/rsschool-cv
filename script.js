@@ -2,6 +2,14 @@ const portfolioRoot = window.document.querySelector('#portfolio');
 
 const projects = [
   {
+    alt: 'GitHub search',
+    img: 'img/github-search.jpg',
+    deployLink: 'https://tiny-lollipop-e5622f.netlify.app/',
+    title: 'GitHub search - React, Redux, Typescript, react-paginate, GitHub API',
+    description:
+      'Test work for Paralect. Search user and repositories by username',
+  },
+  {
     alt: 'Art Quiz',
     img: 'img/art-quiz.jpg',
     deployLink: 'https://art-quiz-coursework.herokuapp.com/',
@@ -33,14 +41,14 @@ const projects = [
     description:
       'Momentum is an analog of the Chrome online store application of the same name. To store data, the application uses local storage - local storage.',
   },
-  {
-    alt: 'Happy Journey',
-    img: 'img/happy-journey.jpg',
-    deployLink: 'https://katiazakharina.github.io/HappyJourney/',
-    title: 'Happy Journey - HTML, CSS, JS',
-    description:
-      'Landing page for travel agency. Made with BEM and Bootstrap. Responsive and cross-browser.',
-  },
+  // {
+  //   alt: 'Happy Journey',
+  //   img: 'img/happy-journey.jpg',
+  //   deployLink: 'https://katiazakharina.github.io/HappyJourney/',
+  //   title: 'Happy Journey - HTML, CSS, JS',
+  //   description:
+  //     'Landing page for travel agency. Made with BEM and Bootstrap. Responsive and cross-browser.',
+  // },
   // {
   //   alt: 'Mortal Combat',
   //   img: 'img/mortal-combat.jpg',
