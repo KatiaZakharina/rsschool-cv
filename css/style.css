@@ -57,7 +57,7 @@ hr {
 }
 .hover-effect {
   background: linear-gradient(to bottom, #fccb4a 0%, #fccb4a 100%);
-  background-position: 0 100%;
+  background-position: 0 105%;
   background-repeat: repeat-x;
   background-size: 4px 4px;
   color: #000;
@@ -66,6 +66,7 @@ hr {
 }
 .hover-effect:hover {
   color: #000;
+  text-decoration: none;
   background-size: 4px 50px;
 }
 .header__full-name {
