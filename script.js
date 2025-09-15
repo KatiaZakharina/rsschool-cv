@@ -12,7 +12,8 @@ const projects = [
   {
     alt: 'Art Quiz',
     img: 'img/art-quiz.jpg',
-    deployLink: 'https://art-quiz-coursework.herokuapp.com/',
+    deployLink: 'https://katiazakharina.github.io/public-katiazakharina-JSFE2021Q3/art-quiz/',
+    // deployLink: 'https://art-quiz-coursework.herokuapp.com/',
     title: 'Art Quiz - React, Redux, Typescript, react-router, i18next',
     description:
       'The game is an art test with two types of questions. Supports two languages and a dark theme',
@@ -20,7 +21,8 @@ const projects = [
   {
     alt: 'Christmas task',
     img: 'img/christmas-task.jpg',
-    deployLink: 'https://rolling-scopes-school.github.io/katiazakharina-JSFE2021Q3/christmas-task/',
+    deployLink: 'https://katiazakharina.github.io/public-katiazakharina-JSFE2021Q3/christmas-task/',
+    // deployLink: 'https://rolling-scopes-school.github.io/katiazakharina-JSFE2021Q3/christmas-task/',
     title: 'Christmas task - TypeScript, Webpack, custom "drag and drop"',
     description:
       'Christmas game that allows you to sort toys and dress up the Christmas tree with them',
@@ -28,7 +30,8 @@ const projects = [
   {
     alt: 'Museum Webpack',
     img: 'img/museum-webpack.jpg',
-    deployLink: 'https://rolling-scopes-school.github.io/katiazakharina-JSFE2021Q3/museum-webpack/',
+    deployLink: 'https://katiazakharina.github.io/public-katiazakharina-JSFE2021Q3/museum-webpack/',
+    // deployLink: 'https://rolling-scopes-school.github.io/katiazakharina-JSFE2021Q3/museum-webpack/',
     title: 'Museum - HTML, CSS, TypeScript, Webpack',
     description:
       'Landing page for the Louvre Museum. It contains a custom video player and several sliders. Works with mapbox API and AOS.',
@@ -36,7 +39,8 @@ const projects = [
   {
     alt: 'Momentum',
     img: 'img/momentum.jpg',
-    deployLink: 'https://rolling-scopes-school.github.io/katiazakharina-JSFE2021Q3/momentum/',
+    // deployLink: 'https://rolling-scopes-school.github.io/katiazakharina-JSFE2021Q3/momentum/',
+    deployLink: 'https://katiazakharina.github.io/public-katiazakharina-JSFE2021Q3/momentum/',
     title: 'Momentum - weather, quotes, and stock APIs',
     description:
       'Momentum is an analog of the Chrome online store application of the same name. To store data, the application uses local storage - local storage.',
